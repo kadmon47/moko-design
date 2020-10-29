@@ -1,0 +1,52 @@
+$dark_color : #4a6e8b;
+$light_color : #7393ad;
+
+.top-bar {
+    width:100%;
+    padding:8px; 
+    color:white;
+    min-width: 900px;
+
+    .main-bar {
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        align-items: center;
+        margin:auto;
+
+        .logo-container {
+            flex-grow:1;
+            align-self: center;
+            font-family: 'Krona One', sans-serif;
+            color:$dark_color;
+            span {
+                color:white;
+            }
+        }
+        header {
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    list-style: none;
+                    
+                    li {
+                        padding:10px;
+                        padding-right:40px;
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        transition: all .1s linear;
+                        &:hover {
+                            cursor: pointer;
+                            color:$dark_color;
+                        }
+
+                        .active {
+                            color:$dark_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
